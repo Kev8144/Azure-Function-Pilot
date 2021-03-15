@@ -35,24 +35,26 @@ From your shell or command line:
 
     git clone https://github.com/Kev8144/AzureFunction.git
 
-## Step 2: Build and Test
--  navigate to the directory of your cloned project and run the project from the command line:
+## Step 2: Build, Restore, and Test
+-  navigate to the directory of your cloned project to build and restore the project from the command line:
 
-```bash
-$ cd src/
-$ dotnet run --project \src\FunctionAppQuizPilot\FunctionAppQuizPilot.csproj
-```
 -  To build the project, in the root directory:
 ```bash
+$ cd src/
 $ dotnet build
 ```
+-  To restore the project, in the root directory:
+```bash
+$ dotnet restore
+```
+
 -  To test the project, in the root directory:
 ```bash
 $ dotnet test
 ```
 
-## Step 3: Run the project
--  navigate to the directory of your cloned project and run the project from the command line.
+## Step 3: Run the Functions locally
+-  navigate to the directory of the functions project and run the project from the command line utilizing the Azure Function Core Tools.
 
 ```bash
 $ cd \src\FunctionAppQuizPilot
